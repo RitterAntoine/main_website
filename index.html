@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Métadonnées de base pour la page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Antoine Ritter, étudiant ingénieur passionné par la technologie">
+    <title>Antoine Ritter - Portfolio</title>
+    
+    <!-- Import de la police Google Fonts - Poppins pour un look moderne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- ============================================
+         HEADER - Barre de navigation
+         ============================================ -->
+    <header class="header">
+        <nav class="nav-container">
+            <!-- Logo (remplacez assets/logo.webp par votre image si besoin) -->
+            <a href="#accueil" class="logo" aria-label="Accueil">
+                <img src="assets/logo.webp" alt="Logo Antoine Ritter" class="logo-img">
+                <span class="sr-only">Antoine Ritter</span>
+            </a>
+            
+            <!-- Menu hamburger pour mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menu de navigation -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- ============================================
+         HERO SECTION - Section d'accueil principale
+         ============================================ -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Bonjour, je suis</h1>
+            <h1>Antoine Ritter</h1>
+            <h2>Étudiant ingénieur en dernière année</h2>
+            <p>Passionné par la technologie et la science</p>
+            <a href="#projets" class="cta-button">Découvrir mes projets</a>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         SECTION PROJETS - Présentation des projets
+         ============================================ -->
+    <section class="section" id="projets">
+        <h2 class="section-title">Mes Projets</h2>
+
+        <!-- NOTE: Ces éléments sont des templates et ne représentent pas des projets personnels -->
+        <p class="projects-note" style="margin-top:0.25rem;margin-bottom:1rem;color:#555;">
+            <strong>Note :</strong> Les cartes ci‑dessous sont des <em>templates de projets</em> fournis à titre d'exemple et ne reflètent pas des projets personnels.
+        </p>
+
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <div class="project-card">
+                <div class="project-header">💻</div>
+                <h3 class="project-title">Web Terminal</h3>
+                <p class="project-description">
+                    Interface interactive en ligne qui simule un terminal dans le navigateur.
+                    Permet d’explorer des commandes dynamiques et de découvrir mon profil sous une forme originale.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <a href="https://web_terminal.antoineritter.fr/" class="project-link" target="_blank">
+                    Accéder au terminal →
+                </a>
+            </div>
+
+            
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <div class="project-header">💻</div>
+                <h3 class="project-title">Application web interactive <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
+                <p class="project-description">Développement d'une application web moderne avec interface utilisateur réactive.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <a href="#" class="project-link">Voir plus →</a>
+            </div>
+            
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <div class="project-header">🤖</div>
+                <h3 class="project-title">Projet Machine Learning <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
+                <p class="project-description">Implémentation d'algorithmes d'apprentissage automatique pour l'analyse de données.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">ML</span>
+                    <span class="tag">TensorFlow</span>
+                </div>
+                <a href="#" class="project-link">Voir plus →</a>
+            </div>
+            
+            <!-- Projet 4 -->
+            <div class="project-card">
+                <div class="project-header">☁️</div>
+                <h3 class="project-title">Infrastructure cloud <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
+                <p class="project-description">Configuration et gestion d'infrastructure cloud avec automatisation des déploiements.</p>
+                <div class="project-tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Cloud</span>
+                </div>
+                <a href="#" class="project-link">Voir plus →</a>
+            </div>
+            
+            <!-- Projet 5 -->
+            <div class="project-card">
+                <div class="project-header">📊</div>
+                <h3 class="project-title">Dashboard analytique <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
+                <p class="project-description">Création d'un tableau de bord pour visualiser et analyser des données en temps réel.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">API</span>
+                    <span class="tag">Visualisation</span>
+                </div>
+                <a href="#" class="project-link">Voir plus →</a>
+            </div>
+            
+            <!-- Projet 6 -->
+            <div class="project-card">
+                <div class="project-header">🔌</div>
+                <h3 class="project-title">Système embarqué <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
+                <p class="project-description">Développement d'un système embarqué pour application IoT avec capteurs.</p>
+                <div class="project-tags">
+                    <span class="tag">IoT</span>
+                    <span class="tag">Arduino</span>
+                    <span class="tag">C++</span>
+                </div>
+                <a href="#" class="project-link">Voir plus →</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         SECTION À PROPOS - Présentation et compétences
+         ============================================ -->
+    <section class="section" id="apropos">
+        <h2 class="section-title">À propos</h2>
+        
+        <div class="about-content">
+            <p class="about-text">
+                Je suis actuellement étudiant en dernière année d'école d'ingénieur, avec une passion profonde 
+                pour les technologies innovantes et le développement de solutions créatives. Mon parcours m'a 
+                permis d'acquérir des compétences solides dans divers domaines de l'informatique, du développement 
+                web à l'intelligence artificielle, en passant par l'infrastructure cloud et les systèmes embarqués.
+            </p>
+            
+            <!-- Grille de compétences -->
+            <div class="skills-grid">
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">Web Development</span>
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Cloud Computing</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         SECTION CONTACT - Formulaire et informations de contact
+         ============================================ -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        
+        <div class="contact-content">
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <a href="mailto:antoine.ritter@viacesi.fr" class="contact-email">antoine.ritter@viacesi.fr</a>
+                
+                <!-- Liens vers les réseaux sociaux -->
+                <div class="social-links">
+                    <a href="https://github.com/RitterAntoine" target="_blank" class="social-link" title="GitHub">
+                        <img src="assets/github-mark/github-mark.svg" alt="GitHub" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Formulaire de contact -->
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         FOOTER - Pied de page
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Antoine Ritter. Tous droits réservés.</p>
+            
+            <!-- Liens sociaux répétés dans le footer -->
+            <div class="social-links">
+                <a href="https://github.com/RitterAntoine" target="_blank" class="social-link" title="GitHub">GH</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JAVASCRIPT external -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
