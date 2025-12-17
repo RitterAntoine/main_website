@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --color-background: #0a0a0a;
+    --color-primary-text: #ededed;
+    --color-secondary-text: #cfcfcf;
+    --color-tertiary-text: #9c9c9c;
+    --color-accent: #2c974b;
+    --font-stack: 'Quantico', sans-serif;
+    --font-heading: var(--font-stack);
+    --font-body: var(--font-stack);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-primary-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+.spacer {
+    height: 100px;
+}
+
+.main_column {
+    width: 100%;
+    max-width: 800px;
+    height: max-content;
+    margin: 0 auto;
+    background-color: var(--color-background);
+    padding: 20px;
+}
+
+.main_title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name_and_role {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.name_and_role h1 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-primary-text);
+}
+
+.name_and_role h2 {
+    font-family: var(--font-heading);
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-secondary-text);
+}
+
+.name_and_role h3 {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+    color: var(--color-tertiary-text);
+}
+
+.main_content {
+    margin-top: 30px;
+}
+
+.content h2, .work_experiences h2, .personnal_side_projects h2, .links h2 {
+    font-family: var(--font-heading);
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-primary-text);
+}
+
+.content p {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--color-secondary-text);
+}
+
+.work_experiences, .personnal_side_projects {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.experiences, .side_projects, .links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.experience, .side_project{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.link_item {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.experience_date, .side_project_date, .link_name {
+    width: 25%;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-tertiary-text);
+}
+
+.experience_date h3, .side_project_date h3, .link_name h3 {
+    margin: 0;
+}
+
+.experience_details, .side_project_details {
+    flex: 1;
+}
+
+.experience_details h3, .side_project_details h3, .link_url a {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-primary-text);
+}
+
+.side_project_details a, .link_url a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.side_project_details a:hover, .link_url a:hover {
+    text-decoration: underline;
+}
+
+.experience_details h4, .side_project_details h4 {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+    color: var(--color-secondary-text);
+}
+
+.experience_details h5, .side_project_details h5 {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+    color: var(--color-tertiary-text);
+}

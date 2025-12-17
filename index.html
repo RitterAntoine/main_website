@@ -1,230 +1,145 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <!-- Métadonnées de base pour la page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio d'Antoine Ritter, étudiant ingénieur passionné par la technologie">
     <title>Antoine Ritter - Portfolio</title>
-    
-    <!-- Import de la police Google Fonts - Poppins pour un look moderne -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <!-- ============================================
-         HEADER - Barre de navigation
-         ============================================ -->
-    <header class="header">
-        <nav class="nav-container">
-            <!-- Logo (remplacez assets/logo.webp par votre image si besoin) -->
-            <a href="#accueil" class="logo" aria-label="Accueil">
-                <img src="assets/logo.webp" alt="Logo Antoine Ritter" class="logo-img">
-                <span class="sr-only">Antoine Ritter</span>
-            </a>
-            
-            <!-- Menu hamburger pour mobile -->
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="spacer"></div>
+    <div class="main_column">
+        <div class="main_title">
+            <div class="avatar">
+                <img src="assets/pixel_art_antoine.png" alt="Antoine Ritter Avatar">
             </div>
-            
-            <!-- Menu de navigation -->
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <!-- ============================================
-         HERO SECTION - Section d'accueil principale
-         ============================================ -->
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <h1>Bonjour, je suis</h1>
-            <h1>Antoine Ritter</h1>
-            <h2>Étudiant ingénieur en dernière année</h2>
-            <p>Passionné par la technologie et la science</p>
-            <a href="#projets" class="cta-button">Découvrir mes projets</a>
+            <div class="name_and_role">
+                <h1>Antoine Ritter</h1>
+                <h2>AI Engineer & Developer</h2>
+                <h3>antoineritter.fr</h3>
+            </div>
         </div>
-    </section>
-    
-    <!-- ============================================
-         SECTION PROJETS - Présentation des projets
-         ============================================ -->
-    <section class="section" id="projets">
-        <h2 class="section-title">Mes Projets</h2>
 
-        <!-- NOTE: Ces éléments sont des templates et ne représentent pas des projets personnels -->
-        <p class="projects-note" style="margin-top:0.25rem;margin-bottom:1rem;color:#555;">
-            <strong>Note :</strong> Les cartes ci‑dessous sont des <em>templates de projets</em> fournis à titre d'exemple et ne reflètent pas des projets personnels.
-        </p>
-
-        <div class="projects-grid">
-            <!-- Projet 1 -->
-            <div class="project-card">
-                <div class="project-header">💻</div>
-                <h3 class="project-title">Web Terminal</h3>
-                <p class="project-description">
-                    Interface interactive en ligne qui simule un terminal dans le navigateur.
-                    Permet d’explorer des commandes dynamiques et de découvrir mon profil sous une forme originale.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-                <a href="https://web_terminal.antoineritter.fr/" class="project-link" target="_blank">
-                    Accéder au terminal →
-                </a>
+        <div class="main_content">
+            <div class="content">
+                <h2>About</h2>
+                <p>Hello! I'm Antoine Ritter, an AI Engineer and Developer. Welcome to my portfolio website.</p>
             </div>
 
-            
-            <!-- Projet MNIST -->
-            <div class="project-card">
-                <div class="project-header">🧠</div>
-                <h3 class="project-title">Reconnaissance de Chiffres (IA)</h3>
-                <p class="project-description">
-                    Application de Deep Learning capable de reconnaître des chiffres manuscrits en temps réel.
-                    Dessinez sur l'écran et le réseau de neurones (CNN) prédit le résultat instantanément.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Flask</span>
+            <div class="work_experiences">
+
+                <div class="work_experiences_title">
+                    <h2>Work Experience</h2>
                 </div>
-                <a href="https://mnist.antoineritter.fr/" class="project-link" target="_blank">
-                    Essayer l'IA →
-                </a>
-            </div>
-            
-            <!-- Projet 3 -->
-            <div class="project-card">
-                <div class="project-header">🤖</div>
-                <h3 class="project-title">Projet Machine Learning <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
-                <p class="project-description">Implémentation d'algorithmes d'apprentissage automatique pour l'analyse de données.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">ML</span>
-                    <span class="tag">TensorFlow</span>
+                <div class="experiences">
+                    <div class="experience">
+                        <div class="experience_date">
+                            <h3>Oct 2024 - Feb 2025</h3>
+                        </div>
+                        <div class="experience_details">
+                            <h3>AI Intern at Technische Hochschule Mittelhessen (THM)</h3>
+                            <h4>Focused on AI learning and practical applications in medical data management. Projects included the MNIST dataset, ECG analysis, and industrial lens defect detection.</h4>
+                            <h5>Deep Learning, Medical Imaging, Sustainable Computing</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="experience">
+                        <div class="experience_date">
+                            <h3>Jan 2024 - Apr 2024</h3>
+                        </div>
+                        <div class="experience_details">
+                            <h3>Algorithm Implementation Intern at Inria</h3>
+                            <h4>Implemented trajectory extraction algorithms for anisotropic 3D printing in C++. Gained expertise in software development and research practices.</h4>
+                            <h5>C++, 3D Printing, Algorithm Design</h5>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience_date">
+                            <h3>Apr 2023 - Jul 2023</h3>
+                        </div>
+                        <div class="experience_details">
+                            <h3>Language Model Intern at Techlab (Ecole des Mines Nancy)</h3>
+                            <h4>Deepened understanding of AI and expanded technical skills. Worked independently in a research setting focusing on language models.</h4>
+                            <h5>Artificial Intelligence, LLM, Research</h5>
+                        </div>
+                    </div>
                 </div>
-                <a href="#" class="project-link">Voir plus →</a>
             </div>
-            
-            <!-- Projet 4 -->
-            <div class="project-card">
-                <div class="project-header">☁️</div>
-                <h3 class="project-title">Infrastructure cloud <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
-                <p class="project-description">Configuration et gestion d'infrastructure cloud avec automatisation des déploiements.</p>
-                <div class="project-tags">
-                    <span class="tag">AWS</span>
-                    <span class="tag">CI/CD</span>
-                    <span class="tag">Cloud</span>
+
+            <div class="personnal_side_projects">
+
+                <div class="side_projects_title">
+                    <h2>Side Projects</h2>
                 </div>
-                <a href="#" class="project-link">Voir plus →</a>
-            </div>
-            
-            <!-- Projet 5 -->
-            <div class="project-card">
-                <div class="project-header">📊</div>
-                <h3 class="project-title">Dashboard analytique <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
-                <p class="project-description">Création d'un tableau de bord pour visualiser et analyser des données en temps réel.</p>
-                <div class="project-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">API</span>
-                    <span class="tag">Visualisation</span>
+                <div class="side_projects">
+                    
+                    <div class="side_project">
+                        <div class="side_project_date">
+                            <h3>2024</h3>
+                        </div>
+                        <div class="side_project_details">
+                            <h3>
+                                <a href="https://web_terminal.antoineritter.fr/" target="_blank">
+                                    Web Terminal ↗
+                                </a>
+                            </h3>
+                            <h4>Interactive online interface that simulates a terminal in the browser. Allows exploring dynamic commands.</h4>
+                            <h5>HTML, CSS, JavaScript</h5>
+                        </div>
+                    </div>
+
+                    <div class="side_project">
+                        <div class="side_project_date">
+                            <h3>2024</h3>
+                        </div>
+                        <div class="side_project_details">
+                            <h3>
+                                <a href="https://mnist.antoineritter.fr/" target="_blank">
+                                    Digit Recognition (AI) ↗
+                                </a>
+                            </h3>
+                            <h4>Deep Learning (CNN) application capable of recognizing handwritten digits drawn on the screen in real time.</h4>
+                            <h5>Python, TensorFlow, Flask</h5>
+                        </div>
+                    </div>
+
                 </div>
-                <a href="#" class="project-link">Voir plus →</a>
             </div>
-            
-            <!-- Projet 6 -->
-            <div class="project-card">
-                <div class="project-header">🔌</div>
-                <h3 class="project-title">Système embarqué <span class="template-badge" style="font-size:0.75rem;color:#fff;background:#6c757d;padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.5rem;">Template</span></h3>
-                <p class="project-description">Développement d'un système embarqué pour application IoT avec capteurs.</p>
-                <div class="project-tags">
-                    <span class="tag">IoT</span>
-                    <span class="tag">Arduino</span>
-                    <span class="tag">C++</span>
-                </div>
-                <a href="#" class="project-link">Voir plus →</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- ============================================
-         SECTION À PROPOS - Présentation et compétences
-         ============================================ -->
-    <section class="section" id="apropos">
-        <h2 class="section-title">À propos</h2>
-        
-        <div class="about-content">
-            <p class="about-text">
-                Je suis actuellement étudiant en dernière année d'école d'ingénieur, avec une passion profonde 
-                pour les technologies innovantes et le développement de solutions créatives. Mon parcours m'a 
-                permis d'acquérir des compétences solides dans divers domaines de l'informatique, du développement 
-                web à l'intelligence artificielle, en passant par l'infrastructure cloud et les systèmes embarqués.
-            </p>
-            
-            <!-- Grille de compétences -->
-            <div class="skills-grid">
-                <span class="skill-badge">Machine Learning</span>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">Docker</span>
-                <span class="skill-badge">Web Development</span>
-                <span class="skill-badge">Linux</span>
-                <span class="skill-badge">Git</span>
-                <span class="skill-badge">Cloud Computing</span>
-            </div>
-        </div>
-    </section>
-    
-    <!-- ============================================
-         SECTION CONTACT - Formulaire et informations de contact
-         ============================================ -->
-    <section class="section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        
-        <div class="contact-content">
-            <!-- Informations de contact -->
-            <div class="contact-info">
-                <a href="mailto:contact@antoineritter.fr" class="contact-email">contact@antoineritter.fr</a>
-                
-                <!-- Liens vers les réseaux sociaux -->
-                <div class="social-links">
-                    <a href="https://github.com/RitterAntoine" target="_blank" class="social-link" title="GitHub">
-                        <img src="assets/github-mark/github-mark.svg" alt="GitHub" class="social-icon">
-                    </a>
+
+            <div class="contact">
+                <div class="links">
+                    <div class="link_title">
+                        <h2>Links</h2>
+                    </div>
+                    <div class="link_item">
+                        <div class="link_name">
+                            <h3>GitHub</h3>
+                        </div>
+                        <div class="link_url">
+                            <a href="https://github.com/RitterAntoine" target="_blank">https://github.com/RitterAntoine</a>
+                        </div>
+                    </div>
+                    <div class="link_item">
+                        <div class="link_name">
+                            <h3>Email</h3>
+                        </div>
+                        <div class="link_url">
+                            <a href="mailto:contact@antoineritter.fr" target="_blank">contact@antoineritter.fr</a>
+                        </div>
+                    </div>
+                    <div class="link_item">
+                        <div class="link_name">
+                            <h3>Reference</h3>
+                        </div>
+                        <div class="link_url">
+                            <a href="https://bonhomme.lol/" target="_blank">https://bonhomme.lol/</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!-- ============================================
-         FOOTER - Pied de page
-         ============================================ -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Antoine Ritter. Tous droits réservés.</p>
-            
-            <!-- Liens sociaux répétés dans le footer -->
-            <div class="social-links">
-                <a href="https://github.com/RitterAntoine" target="_blank" class="social-link" title="GitHub">GH</a>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- JAVASCRIPT external -->
-    <script src="script.js"></script>
-    
+    </div>
 </body>
 </html>
