@@ -11,16 +11,21 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --green: #4ade80;
-      --green-dim: #2d6a4f;
-      --green-glow: rgba(74,222,128,0.15);
-      --bg: #0d1117;
-      --bg2: #161b22;
-      --bg3: #1c2128;
-      --border: #21262d;
-      --text: #e2e8f0;
-      --subtext: #94a3b8;
-      --muted: #64748b;
+      --bg:           #0d1117;
+      --bg2:          #161b22;
+      --bg3:          #1c2128;
+      --orange:       #e07830;
+      --green:        #4ade80;
+      --green-dim:    #2d6a4f;
+      --green-muted:  rgba(74,222,128,.15);
+      --blue:         #60a5fa;
+      --purple:       #a78bfa;
+      --red:          #f87171;
+      --text:         #e2e8f0;
+      --text-dim:     #94a3b8;
+      --text-muted:   #64748b;
+      --border:       #21262d;
+      --border-bright: rgba(74,222,128,.35);
       --mono: 'JetBrains Mono', monospace;
     }
 
@@ -34,7 +39,7 @@
       line-height: 1.6;
     }
 
-    ::selection { background: var(--green-glow); color: var(--green); }
+    ::selection { background: var(--green-muted); color: var(--green); }
 
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
@@ -72,7 +77,7 @@
       padding: 4px;
       border-radius: 6px;
       display: inline-block;
-      box-shadow: 0 0 16px var(--green-glow);
+      box-shadow: 0 0 16px var(--green-muted);
     }
 
     .avatar-border img {
@@ -84,34 +89,52 @@
     }
 
     .name { color: var(--green); font-size: 15px; font-weight: 700; text-align: center; }
-    .role { color: var(--muted); font-size: 10px; text-align: center; letter-spacing: 0.05em; }
+    .role { color: var(--text-muted); font-size: 10px; text-align: center; letter-spacing: 0.05em; }
 
 .sidebar-section { border-top: 1px solid var(--border); padding-top: 20px; }
 
     .sidebar-heading {
-      color: var(--muted);
+      color: var(--text-muted);
       font-size: 9px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      padding: 14px 16px 6px;
     }
+    .sidebar-heading::before { content: '~/'; }
 
     .sidebar-link {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 8px;
+      padding: 6px 16px;
       text-decoration: none;
-      transition: color .15s;
+      font-size: 11px;
+      color: var(--text-dim);
+      border-left: 2px solid transparent;
+      letter-spacing: .03em;
+      transition: color .15s, background .15s;
     }
-
+    .sidebar-link:hover { color: var(--green); background: rgba(74,222,128,.04); }
+    .sidebar-link .link-arrow { color: var(--green-dim); font-size: 10px; flex-shrink: 0; }
+    .sidebar-link .link-key { color: var(--text-muted); font-size: 10px; width: 48px; flex-shrink: 0; }
+    .sidebar-link .link-val { color: var(--text-dim); font-size: 11px; transition: color .15s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .sidebar-link:hover .link-val { color: var(--green); }
-    .sidebar-link .link-arrow { color: var(--green-dim); font-size: 10px; }
-    .sidebar-link .link-key { color: var(--muted); font-size: 10px; width: 48px; flex-shrink: 0; }
-    .sidebar-link .link-val { color: var(--subtext); font-size: 10px; transition: color .15s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sidebar-link:hover .link-arrow { color: var(--green); }
 
-    .stack-item { color: var(--subtext); font-size: 10px; margin-bottom: 5px; }
-    .stack-item::before { content: "▸ "; color: var(--green-dim); }
+    .stack-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      font-size: 11px;
+      color: var(--text-dim);
+      border-left: 2px solid transparent;
+      letter-spacing: .03em;
+      transition: color .15s, background .15s;
+      cursor: default;
+    }
+    .stack-item::before { content: "▸"; color: var(--green-dim); font-size: 10px; flex-shrink: 0; }
+    .stack-item:hover { color: var(--green); background: rgba(74,222,128,.04); }
 
     /* ── Main ── */
     .main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
@@ -129,7 +152,7 @@
     .section { margin-bottom: 48px; scroll-margin-top: 16px; }
 
     /* ── About ── */
-    .about-text { color: var(--subtext); font-size: 12px; line-height: 1.8; max-width: 600px; }
+    .about-text { color: var(--text-dim); font-size: 12px; line-height: 1.8; max-width: 600px; }
     .comment { color: var(--green-dim); }
 
     /* ── Timeline ── */
@@ -155,7 +178,7 @@
 
     .exp-toggle { color: var(--green-dim); font-size: 10px; }
     .exp-entry.open .exp-toggle { color: var(--green); }
-    .exp-period { color: var(--muted); font-size: 11px; white-space: nowrap; }
+    .exp-period { color: var(--text-muted); font-size: 11px; white-space: nowrap; }
     .exp-role { color: var(--text); font-size: 12px; font-weight: 600; transition: color .2s; }
     .exp-entry.open .exp-role { color: var(--green); }
     .exp-company { color: var(--green-dim); font-size: 11px; }
@@ -166,7 +189,7 @@
       transition: max-height .3s ease, opacity .3s;
     }
 
-    .exp-desc { color: var(--muted); font-size: 11px; line-height: 1.7; margin-bottom: 10px; }
+    .exp-desc { color: var(--text-muted); font-size: 11px; line-height: 1.7; margin-bottom: 10px; }
 
     /* ── Tags ── */
     .tags { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -201,7 +224,7 @@
     .project-card:hover {
       background: var(--bg2);
       border-color: var(--green);
-      box-shadow: 0 0 20px var(--green-glow);
+      box-shadow: 0 0 20px var(--green-muted);
     }
 
     .project-header {
@@ -215,7 +238,7 @@
     .project-year { color: var(--green-dim); font-size: 10px; }
 
     .project-desc {
-      color: var(--muted);
+      color: var(--text-muted);
       font-size: 10px;
       line-height: 1.7;
       margin-bottom: 12px;
@@ -228,7 +251,7 @@
 
     .contact-row { display: flex; align-items: center; gap: 12px; font-size: 12px; }
     .contact-key { color: var(--green-dim); width: 80px; flex-shrink: 0; }
-    .contact-val { color: var(--subtext); text-decoration: none; transition: color .15s; }
+    .contact-val { color: var(--text-dim); text-decoration: none; transition: color .15s; }
     .contact-val:hover { color: var(--green); }
 
     /* ── Cursor ── */
@@ -273,7 +296,7 @@
     </div>
 
 <div class="sidebar-section">
-      <div class="sidebar-heading">~/links</div>
+      <div class="sidebar-heading">links</div>
       <a class="sidebar-link" href="https://github.com/RitterAntoine" target="_blank" rel="noopener">
         <span class="link-arrow">→</span>
         <span class="link-key">github</span>
@@ -287,7 +310,7 @@
     </div>
 
     <div class="sidebar-section">
-      <div class="sidebar-heading">~/stack</div>
+      <div class="sidebar-heading">stack</div>
       <div class="stack-item">Python</div>
       <div class="stack-item">C++</div>
       <div class="stack-item">PyTorch</div>
